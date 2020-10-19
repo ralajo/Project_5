@@ -93,7 +93,7 @@ h4 {
 	left: 1024px;
 	top: 35px;
 }
-/*Footer Elements*/
+/*Footer Elements Home Page*/
 #footer1{
 	position: absolute;
 	left: 0px;
@@ -107,19 +107,18 @@ h2.footer{
 	font-size: 15px !important;
 	z-index: 0;
 }
-  #contact-link{
+  #contact-link1{
 	position: absolute;
 	width: 52px;
 	height: 25.76px;
 	left: 53px;
 	top: 882.36px;
 }
-  #careers-link{
+  #careers-link1{
 	position: absolute;
 	width: 49px;
 	height: 25.76px;
 	left: 53px;
-/*HomePage Elements*/
 	top: 913.27px;
 }
 /*Home Page Elements*/
@@ -130,7 +129,8 @@ h2.footer{
 	left: 575px;
 	top: 772px;
 	font-size: 25px;
-	line-height: 41px;}
+	line-height: 41px;
+}
   #front-text{
 	position: absolute;
 	width: 674px;
