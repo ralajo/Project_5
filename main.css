@@ -1,43 +1,147 @@
-body {
-    margin: 60px auto;
-    width: 70%;
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
+@charset "UTF-8";
+/*General Headings*/
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+	font-weight: 400;
 }
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+	Font-family: changa-one;
+	font-style: italic;
+	font-size: 60px;
+	color: #000000;
 }
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+h2 {
+	font-weight:bold;
+	font-size: 25px;
+	color: #000000;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+h3 {
+	font-size: 25px;
+	color: #000000;
 }
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+h4 {
+	font-weight: normal;
+	font-size: 20px;
+	alignment-baseline: top;
+	color: #000000;
+	line-height: 20px;
 }
-
-ul.posts li {
-    list-style: none;
+/*Nav Bar Elements Fixed Position and in Front*/
+#company-name{
+	text-align-last: left;
+	Font-family: changa-one;
+	font-style: italic;
+	font-size: 60px;
+	color: #000000;
+	position: fixed;
+	height: 42px;
+	left: 49px;
+	top: 30px;
+	font-weight: normal;
+	line-height: 42px;
+	text-align: right;
+}
+#shop-link{
+	position: fixed;
+	width: 53px;
+	height: 41px;
+	left: 937px;
+	top: 29px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 41px;
+	color: #000000;
+	display: flex;
+	align-items: center;
+}
+#help-link{
+	position: fixed;
+	width: 48px;
+	height: 41px;
+	left: 1235px;
+	top: 30px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 41px;
+	display: flex;
+	align-items: center;
+}
+#cart-link{
+	position: fixed;
+	width: 44px;
+	height: 41px;
+	left: 1317px;
+	top: 30px;
+	
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 41px;
+	display: flex;
+	align-items: center;
+	color: #000000;
+}
+#search-bar{
+	position: fixed;
+	width: 177px;
+	height: 33px;
+	left: 1024px;
+	top: 35px;
+}
+/*Footer Elements Home Page*/
+#footer1{
+	position: absolute;
+	left: 0px;
+	top: 870px;
+	width: 1440px;
+	height: 102px;
+	z-index: -1;
+}
+h2.footer{
+	color: #F0F0F0 !important;
+	font-size: 15px !important;
+	z-index: 0;
+}
+  #contact-link1{
+	position: absolute;
+	width: 52px;
+	height: 25.76px;
+	left: 53px;
+	top: 882.36px;
+}
+  #careers-link1{
+	position: absolute;
+	width: 49px;
+	height: 25.76px;
+	left: 53px;
+	top: 913.27px;
+}
+/*Home Page Elements*/
+#about-us{
+	position: absolute;
+	width: 95px;
+	height: 29px;
+	left: 575px;
+	top: 772px;
+	font-size: 25px;
+	line-height: 41px;
+}
+  #front-text{
+	position: absolute;
+	width: 674px;
+	height: 57px;
+	left: 700px;
+	top: 772px;
+  }
+#clicky-round{
+	position: absolute;
+	width: 1325px;
+	height: 625px;
+	left: 50px;
+	top: 125px;
 }
