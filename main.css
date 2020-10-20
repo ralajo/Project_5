@@ -145,14 +145,12 @@ h4 {
 }
 /*Footer Elements Home Page*/
 #footer1{
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 1440px;
-	height: 102px;
-	z-index: -1;
+  width: 100%;
+  height: 102px;
+  color: #00000;
+  position: fixed;
+  bottom: 0;
 }
-
   #contact-link{
 	position: absolute;
 	left: 53px;
@@ -168,11 +166,4 @@ h4 {
 	top: 913.27px;
 	font-size: 15px !important;
 	color: #F0F0F0 !important;
-}
-div#Footer {
-  width: 100%;
-  height: 102px;
-  color: #00000;
-  position: fixed;
-  bottom: 0;
 }
