@@ -113,7 +113,8 @@ h4 {
 	position: absolute;
 	left: 53px;
 	top: 882.36px;
-	font-size: 15px !important;
+	color: #F0F0F0;
+	font-size: 15px;
 }
   #careers-link1{
 	position: absolute;
@@ -121,7 +122,7 @@ h4 {
 	height: 25.76px;
 	left: 53px;
 	top: 913.27px;
-	font-size: 15px
+	font-size: 15px;
 }
 /*Home Page Elements*/
 #about-us{
