@@ -102,7 +102,7 @@ h4 {
 	height: 102px;
 	z-index: -1;
 }
-h2.footer{
+.footer{
 	color: #F0F0F0 !important;
 	font-size: 15px !important;
 	z-index: 0;
