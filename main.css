@@ -27,6 +27,9 @@ h4 {
 	line-height: 20px;
 }
 /*Nav Bar Elements Fixed Position and in Front*/
+.nav{
+	z-index:100;
+}
 #company-name{
 	text-align-last: left;
 	Font-family: changa-one;
