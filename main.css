@@ -147,3 +147,26 @@ h4 {
 	left: 50px;
 	top: 125px;
 }
+/*Tabel Design for Shop*/
+#sideblock {
+	position: fixed;
+	display:inline-grid;
+	left: 53px;
+	top: 166px;
+	text-align: left;
+}
+#mainblock {
+	display: grid;
+	position: absolute;
+	grid-auto-columns: 315px;
+	grid-auto-rows: 553px;
+	left: 350px;
+	top: 125px;
+}
+#back {
+	position: fixed;
+	width: 245px;
+	height: 27px;
+	left: 50px;
+	top: 103px;
+}
