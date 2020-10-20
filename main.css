@@ -97,9 +97,6 @@ h4 {
 	top: 35px;
 }
 /*Footer Elements Home Page*/
-.footer{
-	color: #F0F0F0 !important;
-}
 #footer1{
 	position: absolute;
 	top: 0px;
@@ -113,8 +110,8 @@ h4 {
 	position: absolute;
 	left: 53px;
 	top: 882.36px;
-	color: #F0F0F0;
-	font-size: 15px;
+	color: #F0F0F0 !important;
+	font-size: 15px !important;
 }
   #careers-link{
 	position: absolute;
@@ -122,7 +119,8 @@ h4 {
 	height: 25.76px;
 	left: 53px;
 	top: 913.27px;
-	font-size: 15px;
+	font-size: 15px !important;
+	color: #F0F0F0 !important;
 }
 /*Home Page Elements*/
 #about-us{
