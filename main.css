@@ -101,9 +101,9 @@ h4 {
 	color: #F0F0F0 !important;
 }
 #footer1{
-	position: absolute;
+	position: relitive;
+	align-self: flex-end;
 	left: 0px;
-	top: 870px;
 	width: 1440px;
 	height: 102px;
 	z-index: -1;
