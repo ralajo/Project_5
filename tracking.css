@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+.headergrid{
+	display: grid;
+	grid-template-columns: repeat(26, 1fr);
+	grid-gap: 10px;
+	grid-auto-rows: 50px;
+	grid-template-areas: "x f f f f f x x x x x x x x x x x x x s s h h c c ";
+	justify-items:start;
+}
+.logo{
+	grid-area: "f";
+}
+.shop{
+	grid-area: "s";
+}
+.help{
+	grid-area: "h";
+}
+.cart{
+	grid-area: "c";
+	display: flex;
+}
