@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Order Tracking</title>
+</head>
+
+<body>
+	<header class="header">
+		<h1 id="Logo">Fluff Stuff</h1>
+		<h2 id="search">search</h2>
+		<h2 id="shop">shop</h2>
+		<h2 id="help">help</h2>
+		<h2 id="cart">cart</h2>
+	</header>
+	<h1>Order Tracking</h1>
+		<section class="look up">
+		<div>
+			<form>
+				Shipping#<input type="text" name="shippingnumber" pattern="[A-Za-z]{3}" title="Shipping#" required>
+				<input type="submit" value="sumbit"> 
+			</form>
+		</div>
+			<h2>your order is expected to be delivered on <em id="date">Tudesday at 5:00pm</em></h2>
+	</section>
+	<section class="ordervis">
+		<div><img src="Morning Haze Round.png" id="OrderImage" alt="roundpillow">
+		<h3 id="itemname">morning haze round</h3>
+		<p>$20</p>
+		</div>
+		<div>
+			<img src="Morning Haze Round.png" id="OrderImage2" alt="roundpillow">
+		<h3 id="itemname2">morning haze round</h3>
+		<p>$10</p>
+		</div>
+	</section>
+	<footer class="footer">
+		<div>
+			<h3 id="Contact">Contact</h3>
+			<h3 id="Careers">Careers</h3>
+		</div>
+	</footer>
+
+	
+</body>
+</html>
