@@ -53,7 +53,7 @@ a:active {
 	grid-area: shop;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
 	font-style: normal;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 25px;
 	
 }
@@ -61,7 +61,7 @@ a:active {
 	grid-area: help;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
 	font-style: normal;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 25px;
 }
 .cart{
@@ -70,7 +70,7 @@ a:active {
 	align-items: center;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
 	font-style: normal;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 25px;
 }
 /* Footer Nav */
