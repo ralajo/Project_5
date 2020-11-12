@@ -1,23 +1,143 @@
 @charset "UTF-8";
 /* CSS Document */
+a:link {
+    text-decoration: none;
+	color: black;
+}
+
+a:visited {
+    text-decoration: none;
+	color: black;
+}
+
+a:hover {
+    text-decoration: none;
+	color: gray;
+}
+
+a:active {
+    text-decoration: none;
+}
+/* Header Nav */
 .headergrid{
 	display: grid;
-	grid-template-columns: repeat(26, 1fr);
-	grid-gap: 10px;
+	grid-gap: 0px;
 	grid-auto-rows: 50px;
-	grid-template-areas: "x f f f f f x x x x x x x x x x x x x s s h h c c ";
-	justify-items:start;
+	grid-template-columns: "repeat(4, minmax(0, 1fr))";
+	grid-template-areas: 
+		"logo x x navs";
+		/*". logo logo logo logo logo logo . . . . . . . . . . . . . . shop shop help help cart cart .";*/
+	padding: 25px;
+	align-items: baseline;
+	color: black!important;
+}
+.navitemsnotlogo{
+	grid-area: navs;
+	display:grid;
+	grid-gap:10px;
+	grid-template-areas: "shop help cart";
+	grid-template-columns: "repeat(3, minmax(0, 1fr))";
+	align-items: center;
+	justify-content: stretch;
+	align-content: flex-end;
 }
 .logo{
-	grid-area: "f";
+	grid-area: logo;
+	align: left !important;
+	text-align: left;
+	font-family: 'Changa One', cursive;
+	font-kerning: 80%;
+	font-size: 60px;
 }
 .shop{
-	grid-area: "s";
+	grid-area: shop;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	
 }
 .help{
-	grid-area: "h";
+	grid-area: help;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
 }
 .cart{
-	grid-area: "c";
+	grid-area: cart;
 	display: flex;
+	align-items: center;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+}
+/* Footer Nav */
+.footer {
+	position: absolute; 
+	bottom: 0;
+	width: 100%;
+	height: 5rem; 
+	background-color: black;
+	color: #F0F0F0; 
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+	font-style: italic;
+	font-weight: bold;
+	font-size: 15px;
+	text-indent: 25px;
+}
+
+/* Main Content */
+.pagecontent{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: "repeat(4, minmax(0, 1fr))";
+	grid-template-areas:
+		"t n n in "
+		/*". t t t t t t . n n n n n n n n n n n n in in in in in in in ."
+		". . . . . . . . n n n n n n n n n n n n in in in in in in in ."*/
+		;
+	padding: 25px;
+	justify-items: streach;
+	align-items: flex-start;
+	color: black!important;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+	font-style: normal;
+	font-size: 15px;
+	alignment-baseline: top;
+}
+.pagetitleot{
+	grid-area: t;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+	font-style: normal;
+	font-size: 20px;
+}
+.orderactivity{
+	grid-area: n;
+	display:flex;
+	flex-direction: column;
+	max-width: 500px;
+}
+#map{
+	outline-color: black;
+	outline-style: solid;
+	max-height: 300px;
+}
+.orderinfodetails{
+	grid-area: in;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+	font-style: normal;
+	font-size: 15px;
+	border-color: black;
+	text-align: left;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem; 
 }
