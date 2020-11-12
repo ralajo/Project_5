@@ -3,50 +3,81 @@
 <head>
 <meta charset="UTF-8">
 <title>Order Tracking</title>
-<link href="tracking.css" rel="stylesheet" type="text/css">
+<link href="Tracking.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+a:hover {
+	color: #E8E6DF;
+}
+</style>
 </head>
 
 <body>
+<div id="page-container">
+   <div id="content-wrap">
 	<header>
 		<nav class= "headergrid">
 			<div class="logo">
-				<a id="navlogo">Fluff Stuff</a>
+				<a href="https://ralajo.github.io/ id="navlogo">Fluff Stuff</a>
 			</div>
-			<a class="shop">shop</a>
-			<a class="help">help</a>
-			<div class="cart">
-				<a href id="navcart">cart</a>
-				<div class="cartimage">
-					<img src="5641-200 1.png" width="44" height="45" alt=""/>
-					<p id="numberofitemsincart">1</p>
-				</div>
-		    </div>
+			<div class="navitemsnotlogo">
+				<a href="ShopRedo.html" class="shop">shop</a>
+				<a href class="help">help</a>
+				<div class="cart">
+					<a href id="navcart">cart</a>
+					<img src="5641-200 1.png" alt=""/>
+		    	</div>
+			</div>
 		</nav>
 	</header>
-	<h1>Order Tracking</h1>
-		<section class="look up">
-		<div>
-			<form>
-				Shipping#<input type="text" name="shippingnumber" pattern="[A-Za-z]{3}" title="Shipping#" required>
-				<input type="submit" value="sumbit"> 
-			</form>
+	<section>
+	  <div class="pagecontent">
+		<div class="pagetitleot">
+		ORDER DETAILS
 		</div>
-			<h2>your order is expected to be delivered on <em id="date">Tudesday at 5:00pm</em></h2>
+		<div class="orderactivity">
+			<div class="status">
+				<h2>Your order is out for Delivery!</h2>
+				<h4>We expect it to arrive  should be on your doorsep by 5:00PM EST</h4>
+			</div>
+			<p>Last Known Location: 9:00AM</p>
+			<img id="map" src="Screen Shot 2020-11-11 at 9.11.06 PM.png" alt="map">
+		</div>
+		 <div class="orderinfodetails">
+			 <table>
+				<tr>
+					<td><h3>Rachel Jones<br>1234 Union Ave<br>60607 Chicago IL</h3></td>
+				</tr>
+				<tr>
+					<th>Shipping Number</th>
+					<td>10840800</td>
+				</tr>
+				<tr>
+					<th>Order Placed</th>
+					<td>March 12, 2020</td>
+				</tr>
+				<tr>
+					 <td><p><em><a>view invoice</a></em></p></td> 
+				</tr>
+			 </table>
+		</div>
+		</div>
 	</section>
-	<section class="ordervis">
-		<div><img src="Morning Haze Round.png" id="OrderImage" alt="roundpillow">
-		<h3 id="itemname">morning haze round</h3>
-		<p>$20</p>
-		</div>
-		<div>
-			<img src="Morning Haze Round.png" id="OrderImage2" alt="roundpillow">
-		<h3 id="itemname2">morning haze round</h3>
-		<p>$10</p>
-		</div>
-	</section>
-	<footer class="footer">
+   </div>
+	<br>
+	   <br>
+	   <br>
+  <footer class="footer">
 		<div>
 			<h3 id="Contact">Contact</h3>
 			<h3 id="Careers">Careers</h3>
 		</div>
 	</footer>
+	</div>
+</body>
+</html>
