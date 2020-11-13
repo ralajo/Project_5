@@ -2,42 +2,60 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Product Page</title>
+<title>PRODUCT DETAIL</title>
+<link href="FluffProduct.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {
+	margin: 0px;
+}
+a:hover {
+	color: #E8E6DF;
+}
+</style>
 </head>
 
 <body>
-	<header class="nav">
-		<nav> 
-		<div>
-			<a id="company-name" href="index.html">Fluff Stuff</a>
-			<a id="shop-link" href="ShopRedo.html">shop</a>
-			<a id="help-link">help</a> 
-			<a id="cart-link">cart</a>
-			<img src="Downloads/search bar (1).jpg" width="708" height="132" alt="search bar" id="search-bar"/>
-		</div>
+<div id="page-container">
+   <div id="content-wrap">
+<header>
+		<nav class= "headergrid">
+			<div class="logo">
+				<a href id="navlogo">Fluff Stuff</a>
+			</div>
+			<div class="navitemsnotlogo">
+				<a href class="shop">shop</a>
+				<a href class="help">help</a>
+				<div class="cart">
+					<a href id="navcarttotalitems">0</a>
+					<img src="5641-200 1.png" alt="1" id="numberofitemsincartotal"/>
+		    	</div>
+			</div>
 		</nav>
-		<h4><a id="back">back</a></h4>
-	</header>
-	
-	    <!--Images of product-->
-	<section>
-		<img id="product big pic" src="Rectangle 32Bigproductphoto.png" alt="zoom-product"/>
-		<section class="product small pic">
-			<img id="img1" src="SmallP1.png" alt="zoom-product"/>
-			<img id="img2" src="SmallP2.png" alt="zoom-product"/>
-			<img id="img3" src="SmallP3.png" alt="zoom-product"/>
-			<img id="img4" src="SmallP4.png" alt="zoom-product"/>
-		</section>
-	</section>
-		<!--Text by product-->
-	<section class="product-description-main">
-		<h3 id="product title">Morning Haze<br>Round</h3>
-		<h4 id="product price">$30</h4>
-		<h5 id="product description">size 12x12 inches<br>handcrafted round pillow</h5>
-		<h6 id="construction link">more about connstruction</h6>
+</header>
+<div class="pagecontent">
+	<div class="pagetitleot">
+		PRODUCT DETAIL
+		</div>
+	<div class="productimagespp">
+			<div class="mainproductimage">
+				<img id="MHRBig" src="/Rectangle 32Bigproductphoto.png" alt="zoom-product"/>
+			</div>
+			<div class="miniproductimages">
+				<img id="MHRI1" src="/SmallP1.png" alt="zoom-product"/>
+				<img id="MHRI2" src="/SmallP2.png" alt="zoom-product"/>
+				<img id="MHRI3" src="/SmallP3.png" alt="zoom-product"/>
+				<img id="MHRI4" src="/SmallP4.png" alt="zoom-product"/>
+			</div>
+		</div>
+		<div class="productinfopp">
+			<h2 id="product title">Round Pillow in<br>Morning Haze</h2>
+			<p id="Fill">Fill <strong>Duck-Down</strong></p>
+<h4 id="product price">$30</h4>
+			<h5 id="product description">size 12x12 inches<br>handcrafted round pillow</h5>
+			<a><h6 id="construction link">more about connstruction</h6></a>
 		<!--Form to order product-->
-		<form>
-			<section class="order-specifications">
+			<div class="order-specifications">
+				<form class="productinfopp">
 				<label for="filling-opt">Fill</label>
 				<select name="filling-opt" id="filling-opt">
 					<option value="duck-down">Duck Down</option>
@@ -53,17 +71,22 @@
 					<option value="4">4</option>
 					<option value="5">5</option>
 					<option value="6">6</option>
-				</select>
-			</section>
-			<section class="cart-add-button">
-				<input type="submit" value="add to cart">
-			</section>
-		</form>
-	</section>
-	<footer class="footer">
-	  <img src="Rectangle 52.png" alt="" id="footer1"/>
-		<h2><a id="contact-link">Contact</a></h2>
-		<h2><a id="careers-link">Careers</a></h2>
+					</select>
+					<br>
+				<input type="submit" value="add to cart" class="Add2cartbutton">
+				</form>
+				</div>
+		</div>
+	 </div>
+</div>
+</div>
+ 	<footer class="footer">
+		<div>
+			<h3 id="Contact">Contact</h3>
+			<h3 id="Careers">Careers</h3>
+		</div>
 	</footer>
+	<script src = "FluffStuff.js" async></script>
 </body>
 </html>
+
