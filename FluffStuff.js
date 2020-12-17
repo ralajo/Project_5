@@ -41,7 +41,7 @@ function addToCart() {
 	image = document.getElementById("MHRBig");
 	
 	addPillow = new Pillows(shape,color,fill,quantity,price,image,name);
-	alert(this.quantity + " "+ this.shape + " Pillows in " + this.color + " with "+ this.fill + " ADDED TO CART")
+	alert(this.quantity + " "+ this.name + " with "+ this.fill + " ADDED TO CART")
 	
 	window.localStorage.setItem(localStorageCount, JSON.stringify(addPillow));
 }
