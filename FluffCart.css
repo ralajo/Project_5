@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/* CSS Document */
+a:link {
+    text-decoration: none;
+	color: black;
+}
+
+a:visited {
+    text-decoration: none;
+	color: black;
+}
+
+a:hover {
+    text-decoration: none;
+	color: gray;
+}
+
+a:active {
+    text-decoration: none;
+}
+/* Header Nav */
+.headergrid{
+	display: grid;
+	grid-gap: 10px;
+	grid-auto-rows: 50px;
+	grid-template-columns: "repeat(4, minmax(0, 1fr))";
+	grid-template-areas: 
+		"logo x x navs";
+		/*". logo logo logo logo logo logo . . . . . . . . . . . . . . shop shop help help cart cart .";*/
+	padding: 25px;
+	align-items: baseline;
+	color: black!important;
+}
+	.logo{
+		grid-area: logo;
+		align: left !important;
+		text-align: left;
+		font-family: 'Changa One', cursive;
+		font-kerning: 80%;
+		font-size: 60px;
+	}	
+	.navitemsnotlogo{
+		grid-area: navs;
+		display:grid;
+		grid-gap:10px;
+		grid-template-areas: "shop help cart";
+		grid-template-columns: "repeat(3, minmax(0, 1fr))";
+		align-items: center;
+		justify-content: stretch;
+		align-content: flex-end;
+	}
+		.shop{
+			grid-area: shop;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+			font-style: normal;
+			font-weight: bold;
+			font-size: 25px;
+
+		}
+		.help{
+			grid-area: help;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+			font-style: normal;
+			font-weight: bold;
+			font-size: 25px;
+		}
+		.cart{
+			grid-area: cart;
+			display: flex;
+			align-items: center;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+			font-style: normal;
+			font-weight: bold;
+			font-size: 25px;
+}
+/* Footer Nav */
+.footer {
+	position: absolute; 
+	bottom: 0;
+	width: 100%;
+	height: 5rem; 
+	background-color: black;
+	color: #F0F0F0; 
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+	font-style: italic;
+	font-weight: bold;
+	font-size: 15px;
+	text-indent: 25px;
+}
+
+/* Main Content */
+.pagecontent{
+	display: grid;
+	grid-gap: 26px;
+	grid-template-columns: "repeat(4, minmax(0, 1fr))";
+	grid-template-areas: "t i i c";
+	padding: 25px;
+	justify-items: stretch;
+	align-items: flex-start;
+	color: black!important;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+	font-style: normal;
+	font-size: 15px;
+	alignment-baseline: top;
+}
+.pagetitleot{
+	grid-area: t;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+	font-style: normal;
+	font-size: 20px;
+}
+/*stolenfromthedogs*/
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card:nth-of-type(1) {
+  flex: 1 1 0%;
+}
+
+.card:nth-of-type(2),
+.card:nth-of-type(3) {
+  flex: 2 1 0%;
+}
+/*back to norm*/
+.itemsincart{
+	grid-area: i;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+	font-style: normal;
+	display: flex;
+	align-items: stretch;
+	flex-direction: column;
+}
+	.itembox{
+		display: grid;
+		grid-template-areas: 
+			"im d d u q t"
+			"im . . . r r"
+			;
+		grid-auto-columns: "repeat(6, minmax(0,1fr))";
+		grid-auto-rows: auto;
+		grid-gap:10px;
+		align-items:center;
+		text-justify:top ;
+		justify-content:stretch;
+	}
+		.itemimage{
+			grid-area: im;
+			max-height: auto;
+		}
+		.itemdescript{
+			grid-area: d;
+		}
+		.itemprice{
+			grid-area: u;
+}
+		.itemquant{
+			grid-area: q;
+}
+		.itemtotalprice{
+			grid-area: t;
+}
+.removeitem{
+			grid-area: r;
+			allign-text: flex-end !important;
+			}
+.orderinfodetails{
+	grid-area: c;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, "sans-serif";
+	font-style: normal;
+	font-size: 15px;
+	border-color: black;
+	text-align: left;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem; 
+}
+/*This is stuff drom the dog one using to edit this!*/
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card:nth-of-type(1) {
+  flex: 1 1 0%;
+}
+
+.card:nth-of-type(2),
+.card:nth-of-type(3) {
+  flex: 2 1 0%;
+}
