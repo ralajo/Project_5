@@ -77,12 +77,12 @@ function CardTemplate (parentEl, shape, color, fill, quantity, price, image, nam
 
   // new function to load dogs from localStorage - walk through this in exercise
 function onLoad() {
-  const myPillows = localStorage.getItem("pillowArray");
-  if(myPillows === null) {
+  const pillowArray = localStorage.getItem("pillowArray");
+  if(pillowArray === null) {
     return;
   }
   else {
-    const cartItems = JSON.parse(myPillows);
+    const pillowArray = JSON.parse(window.localStorage.setItem("pillowArray",JSON.stringify(pillow)));
     // End of Part 2
     // CardTemplate(divDoggoContainer, savedDogs.header, savedDogs.body, savedDogs.imgUrl);
     // End of Part 3
@@ -111,6 +111,22 @@ aCreateRandom.onsubmit = function (e) {
   e.preventDefault();
    createnewitem(divDoggoContainer);
 };
+
+  // new function to remove dogs from localStorage
+let clearButton = document.getElementById('clear-session-btn');
+clearButton.onclick = function (e) {
+  localStorage.removeItem('myDogs');
+}
+/
+const pillow(shape,color,fill,quantity,price,image,name){
+	this.shape = shape;
+	this.color = color;
+	this.fill = fill;
+	this.quantity = quantity;
+	this.price = price;
+	this.image = image;
+	this.name = function(){return this.shape + " in " + this.color + " with " + this.fill + " Filling";};
+}
 // JavaScript Document
 /*var localStorageCount = 0;
 var shape = "";
