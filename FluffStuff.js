@@ -3,28 +3,27 @@
 let localStorage = 0;
 let pillowArray = [];
 
-//PRODUCT PAGE ALONE FUNCTIONS
+//PRODUCT PAGE ALONE 
 //Change Title of Fill
-function filltitle() {
-	console.log("filltitlechange");
+function filltitle() {	
 	let x = document.getElementById("pfill");
 	let i = x.selectedIndex;
+	
 	return document.getElementById("fillinsert").innerHTML = x.options[i].text;
+	}
 
-	//Change The Price to reflect the selected Quantity
-
-	function pricequantchange() {
-		console.log("pricequant chang");
+//Change The Price to reflect the selected Quantity
+function pricequantchange() {
 		var x = document.getElementById("pquantity");
 		var i = x.selectedIndex;
-		return document.getElementById("pprice").innerHTML = x.options[i].text * 30;
+	 return document.getElementById("pprice").innerHTML = x.options[i].text * 30;
 	}
 
 	//CART PAGE FUNCTIONS
 	//Servers as template to build the rows of items with thier info - Remove item function within this space! 
 	//This idea + style comes from the doggo's activity!!
 
-	function cardTemplate(parentEl, name, quantity, image, shape, color, fill, price, index) {
+function cardTemplate(parentEl, name, quantity, image, shape, color, fill, price, index) {
 		let divContainer = document.createElement("div");
 		divContainer.className = "card";
 		parentEl.appendChild(divContainer);
@@ -93,8 +92,9 @@ function filltitle() {
 
 	}
 
-	//Constructor Function for Pillow to exsist
-
+//Constructor Function for Pillow to exsist
+	//here the getPillowName function is made, name is not in the class of pillows initially,
+		//b/c this function is used later to append the constructed function
 	class Pillow {
 		constructor(shape, color, fill, quantity, price, image) {
 			this.shape = shape;
@@ -104,8 +104,6 @@ function filltitle() {
 			this.price = price;
 			this.image = image;
 		}
-		//here the getPillowName function is made, name is not in the class of pillows initially,
-		//b/c this function is used later to append the constructed function
 		getPillowName() {
 			return this.shape + " in " + this.color + " with " + this.fill + " filling";
 		}
@@ -119,6 +117,7 @@ function filltitle() {
 		let quantity = document.getElementById("pquantity").value;
 		let price = document.getElementById("pprice").innerHTML;
 		let image = document.getElementById("MHRBig").src;
+		
 		let fish = new Pillow(shape, color, fill, quantity, price, image);
 		//I called this fish, because I was having trouble remembering that this was a differnt thing functionally so I wrote a different word from all else
 
@@ -160,3 +159,4 @@ function filltitle() {
 
 	//TOTAL
 	//functions dependent upon this input
+
