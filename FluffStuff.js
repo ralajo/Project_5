@@ -122,6 +122,7 @@ function addToCart() {
 
 	let fish = new Pillow(shape, color, fill, quantity, price, image);
 	fish.name = fish.getPillowName();
+	//document.getElementById("cardcount")= fish.quantity;
 	pillowArray.push(fish);
 	window.localStorage.setItem("pillowArray", JSON.stringify(pillowArray));
 	//I called this fish, because I was having trouble remembering that this was a differnt thing functionally so I wrote a different word from all else
@@ -129,7 +130,7 @@ function addToCart() {
 	// through these pushes you can see that the pillows name is beign added to the fish function
 	//var x = fish.quantity;
 	//document.getElementById("cartCount").innerHTML ++ x;
-	getCartCount(fish.quantity);
+	//getCartCount(fish.quantity); I could not figure out how to get this to work without preventing the other funcitons from working!
 	console.log(pillowArray);
 	console.log(fish);
 	console.log(fish.quantity);
@@ -157,9 +158,13 @@ function onLoad() {
 	}
 }
 
-	//CART COUNT
-	getCartCount(value){
-	return document.getElementById("cartcount").innerHTML += value;
+	//CART COUNT - get all og the things to add up! - Again could not get this to work, but I tried alot to make all of these things depended upon it, but since I didn't get it all of these dont work as intended.
+	/*function getCartCount (quantity) {
+	var x = document.getElementById("cartcount").innerHTML + fish.quantity;
+	document.getElementById("cartcount").innerHTML = x;
+	console.log("cartcount");
+	document.getElementById("subtotal").innerHTML = 30 * x;
+	document.getElementById("total").innerHTML = 30 * x + 30;
 	}
 	//SUBTOTAL
 
@@ -168,4 +173,4 @@ function onLoad() {
 	//SHIPPING
 
 	//TOTAL
-	//functions dependent upon this input
+	//functions dependent upon this input*/
