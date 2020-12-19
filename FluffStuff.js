@@ -166,3 +166,4 @@ function onLoad() {
 	document.getElementById("subtotal").innerHTML = 30 * x;
 	document.getElementById("total").innerHTML = 30 * x + 30;
 	}
+*/
