@@ -16,7 +16,7 @@
 	</style>
 	<script type="text/javascript" src="FluffStuff.js"></script>
 </head>
-
+<!--onLoad Starts off the function at the top-->
 <body onload="onLoad()">
 	<div id="page-container">
 		<div id="content-wrap">
@@ -29,7 +29,7 @@
 						<a href="FluffProduct.html" class="shop">shop</a>
 						<a href class="help">help</a>
 						<div class="cart">
-							<span id="cartcount">0</span>
+							<span id="cartcount"></span>
 							<a href id="navcart">cart</a>
 							<img src="5641-200 1.png" alt="" />
 						</div>
@@ -44,62 +44,14 @@
 					<div class="grid-container">
 					</div>
 					<div class="itemsincart">
-						<div id="div-doggos" class="container"></div>
-						<div class="headerforitemboxes">
-							<div id="pricelable">price</div>
-							<div id="quantlable">quantity</div>
-						</div>
-						<div id="divstuff">
-							<div class="itembox">
-
-								<div class="itemimage">
-									<img src="Rectangle 53.png" alt="item1" height="175" id="cozydenim">
-								</div>
-								<div class="itemdescript">
-									<a>
-										<h2 class="pillowtype" id="MHRD">Round Pillow</h2>
-									</a>
-									<div class="attlist">
-										<p><strong>Fill </strong>
-											<ims id="pfilled"></ims>
-										</p>
-										<p><strong>Color </strong><ins id="pcolored"></ins></p>
-										<div class="edit">
-											<a>edit</a>
-										</div>
-									</div>
-								</div>
-								<div class="itemprice">
-									<a>$30.00</a>
-								</div>
-								<div class="itemquant">
-									<select name="quant" id="quantselect">
-										<option 1="1">1</option>
-										<option 2="2">2</option>
-										<option 3="3">3</option>
-										<option 4="4">4</option>
-										<option 5="5">5</option>
-										<option 6="6">6</option>
-									</select>
-								</div>
-								<div class="itemtotalprice">
-									<a class="priceforallitem">
-										<h3>$30.00</h3>
-									</a>
-								</div>
-								<div class="removeitem">
-									<a>remove</a>
-								</div>
-							</div>
-						</div>
-					</div>
+						<div id="divstuff"> </div></div>
 					<div class="orderinfodetails">
 						ORDER SUMMARY
 						<br>
 						<table>
 							<tr>
 								<th>Subtotal</th>
-								<td id="subtotal">$230</td>
+								<td id="subtotal"></td>
 							</tr>
 							<tr>
 								<th>Tax</th>
@@ -107,13 +59,13 @@
 							</tr>
 							<tr>
 								<th>Shipping</th>
-								<td id="shipping">$23</td>
+								<td id="shipping">$10</td>
 							</tr>
 							<tr>
 								<th>
 									<h3>Total Cost</h3>
 								</th>
-								<td id="totalcost">sd</td>
+								<td id="totalcost"></td>
 							</tr>
 						</table>
 						<button>Checkout</button>
