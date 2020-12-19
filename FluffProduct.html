@@ -1,95 +1,102 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>PRODUCT DETAIL</title>
-<link href="FluffProduct.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-body {
-	margin: 0px;
-}
-a:hover {
-	color: #E8E6DF;
-}
-</style>
+	<meta charset="UTF-8">
+	<title>PRODUCT DETAIL</title>
+	<link href="FluffProduct.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		body {
+			margin: 0px;
+		}
+
+		a:hover {
+			color: #E8E6DF;
+		}
+	</style>
 </head>
 
 <body>
-<div id="page-container">
-   <div id="content-wrap">
-<header>
-		<nav class= "headergrid">
-			<div class="logo">
-				<a href id="navlogo">Fluff Stuff</a>
-			</div>
-			<div class="navitemsnotlogo">
-				<a href class="shop">shop</a>
-				<a href class="help">help</a>
-				<div class="cart">
-					<span id="cartcount">0</span>
-					<a href="FluffCart.html"><img src="5641-200 1.png" alt="1" id="numberofitemsincartotal"/></a>
-		    	</div>
-			</div>
-		</nav>
-</header>
-<div class="pagecontent">
-	<div class="pagetitleot">
-		PRODUCT DETAIL
-		</div>
-	<div class="productimagespp">
-			<div class="mainproductimage">
-				<img id="MHRBig" src="/Rectangle 32Bigproductphoto.png" alt="zoom-product"/>
-			</div>
-			<div class="miniproductimages">
-				<img id="MHRI1" src="/SmallP1.png" alt="zoom-product"/>
-				<img id="MHRI2" src="/SmallP2.png" alt="zoom-product"/>
-				<img id="MHRI3" src="/SmallP3.png" alt="zoom-product"/>
-				<img id="MHRI4" src="/SmallP4.png" alt="zoom-product"/>
-			</div>
-		</div>
-		<div class="productinfopp">
-			<h2 id="product title"><span id="pshape">Round</span> Pillow in<br><span id="pcolor">Morning Haze</span></h2>
-			<p id="FillRPMH">Fill <strong><span id="fillinsert"></span></strong></p>
-			<h4>$<span id="pprice">30</span></h4>
-			<h5 id="product description">size 12x12 inches<br>handcrafted round pillow</h5>
-			<a><h6 id="construction link">more about connstruction</h6></a>
-		<!--Form to order product-->
-			<div class="order-specifications" method="post">
-				<form class="productinfopp">
-				<label for="pfill">Fill</label>
-				<select name="pfill" id="pfill" onchange="filltitle()" placeholder="select">
-					<option value="duck-down">Duck Down</option>
-					<option value="memory-foam">Memory Foam</option>
-					<option value="hypo">Polyfill</option>
-				</select>
-				<br>
-				<label for="pquantity">Qnt</label>
-				<select name="pquantity" id="pquantity" onchange="pricequantchange()">
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					</select>
-					<br>
-				<input type="button" onclick="addToCart()" name="addtocart" value="add to cart">
-				</form>
+	<div id="page-container">
+		<div id="content-wrap">
+			<header>
+				<nav class="headergrid">
+					<div class="logo">
+						<a href id="navlogo">Fluff Stuff</a>
+					</div>
+					<div class="navitemsnotlogo">
+						<a href class="shop">shop</a>
+						<a href class="help">help</a>
+						<div class="cart">
+							<span id="cartcount">0</span>
+							<a href="FluffCart.html"><img src="5641-200 1.png" alt="1"
+									id="numberofitemsincartotal" /></a>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<div class="pagecontent">
+				<div class="pagetitleot">
+					PRODUCT DETAIL
 				</div>
+				<div class="productimagespp">
+					<div class="mainproductimage">
+						<img id="MHRBig" src="/Rectangle 32Bigproductphoto.png" alt="zoom-product" />
+					</div>
+					<div class="miniproductimages">
+						<img id="MHRI1" src="/SmallP1.png" alt="zoom-product" />
+						<img id="MHRI2" src="/SmallP2.png" alt="zoom-product" />
+						<img id="MHRI3" src="/SmallP3.png" alt="zoom-product" />
+						<img id="MHRI4" src="/SmallP4.png" alt="zoom-product" />
+					</div>
+				</div>
+				<div class="productinfopp">
+					<h2 id="product title"><span id="pshape">Round</span> Pillow in<br><span id="pcolor">Morning
+							Haze</span></h2>
+					<p id="FillRPMH">Fill <strong><span id="fillinsert"></span></strong></p>
+					<h4>$<span id="pprice">30</span></h4>
+					<h5 id="product description">size 12x12 inches<br>handcrafted round pillow</h5>
+					<a>
+						<h6 id="construction link">more about connstruction</h6>
+					</a>
+					<!--Form to order product-->
+					<div class="order-specifications" method="post">
+						<form class="productinfopp">
+							<label for="pfill">Fill</label>
+							<select name="pfill" id="pfill" onchange="filltitle()" placeholder="select">
+								<option value="duck-down">Duck Down</option>
+								<option value="memory-foam">Memory Foam</option>
+								<option value="hypo">Polyfill</option>
+							</select>
+							<br>
+							<label for="pquantity">Qnt</label>
+							<select name="pquantity" id="pquantity" onchange="pricequantchange()">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+							</select>
+							<br>
+							<input type="button" onclick="addToCart()" name="addtocart" value="add to cart">
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
-	 </div>
-</div>
-	<br>
-	<br>
-	<br>
-</div>
- 	<footer class="footer">
+		<br>
+		<br>
+		<br>
+	</div>
+	<footer class="footer">
 		<div>
 			<h3 id="Contact">Contact</h3>
 			<h3 id="Careers">Careers</h3>
 		</div>
-	</footer>	
-	<script type ="text/javascript" src ="FluffStuff.js"></script>
+	</footer>
+	<script type="text/javascript" src="FluffStuff.js"></script>
 
 </body>
+
 </html>
